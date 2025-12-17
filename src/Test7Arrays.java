@@ -14,7 +14,7 @@ public class Test7Arrays {
 
         List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
                 .map(Integer::parseInt)
-                .collect(toList());
+                .toList();
         for (int i = 0; i < arr.size() ; i ++) { //best-practice approach for (int i = n - 1; i >= 0; i--) { System.out.print(arr.get(i));
             System.out.print(arr.get(--n));
             if (n != 0){
